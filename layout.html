@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Member User ID Registration</title>
+
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="top-bar"></div>
+
+        <div class="card">
+
+            <!-- HEADER -->
+            <header class="header">
+
+                <div class="header-icon">✓</div>
+
+                <div>
+                    <h1>Online Member User ID Registration</h1>
+                    <p>Create your member account by completing the form below.</p>
+                </div>
+
+            </header>
+
+
+            <div class="notice">
+                <strong>Required fields</strong> are marked with
+                <span>*</span>
+            </div>
+
+
+            <form id="registrationForm">
+
+                <!-- ACCOUNT INFORMATION -->
+
+                <section class="section">
+
+                    <div class="section-title blue">
+                        <span>01</span>
+                        Account Information
+                    </div>
+
+                    <p class="instruction">
+                        Please supply the following information as reported to the Social Security System.
+                    </p>
+
+
+                    <div class="field">
+
+                        <label for="ssNumber">
+                            * CRN / SS Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="ssNumber"
+                            placeholder="Enter your CRN / SS Number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="tip">
+
+                        <strong>Note:</strong>
+                        If your email address is other than yahoo.com,
+                        kindly inform your network administrator not to
+                        block mail from sss.gov.ph.
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="email">
+                            * Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="confirmEmail">
+                            * Confirm Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="confirmEmail"
+                            placeholder="Re-enter your email address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="tip yellow">
+
+                        <strong>User ID reminder:</strong>
+                        Length must be 8-20 characters.
+                        First character must be alphabetic.
+                        No special characters except underscore.
+                        Example: Juan_Cruz1234
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="userId">
+                            * Preferred User ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="userId"
+                            placeholder="Create your User ID"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="confirmUserId">
+                            * Confirm Preferred User ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="confirmUserId"
+                            placeholder="Re-enter your User ID"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="tip red">
+
+                        <strong>Not allowed:</strong>
+                        # % ( ) \ [ ] = | &amp; /
+
+                    </div>
+
+                </section>
+
+
+                <!-- PERSONAL INFORMATION -->
+
+                <section class="section">
+
+                    <div class="section-title purple">
+
+                        <span>02</span>
+                        Personal Information
+
+                    </div>
+
+
+                    <div class="grid">
+
+                        <div class="field">
+
+                            <label for="surname">
+                                * Surname / Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="surname"
+                                placeholder="Last name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label for="givenName">
+                                * Given Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="givenName"
+                                placeholder="First name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label for="middleName">
+                                Middle Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="middleName"
+                                placeholder="Middle name"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label for="birthDate">
+                                * Date of Birth
+                            </label>
+
+                            <input
+                                type="date"
+                                id="birthDate"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- MAILING ADDRESS -->
+
+                <section class="section">
+
+                    <div class="section-title orange">
+
+                        <span>03</span>
+                        Mailing Address
+
+                    </div>
+
+
+                    <p class="instruction">
+                        Philippines Address
+                    </p>
+
+
+                    <div class="grid">
+
+                        <div class="field full">
+
+                            <label for="building">
+                                Room / Floor / Unit No. &amp; Building Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="building"
+                                placeholder="Building / unit information"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label for="house">
+                                House / Lot &amp; Block No.
+                            </label>
+
+                            <input
+                                type="text"
+                                id="house"
+                                placeholder="House / lot number"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label for="street">
+                                Street
+                            </label>
+
+                            <input
+                                type="text"
+                                id="street"
+                                placeholder="Street name"
+                            >
+
+                        </div>
+
+
+                        <div class="field full">
+
+                            <label for="subdivision">
+                                Subdivision
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subdivision"
+                                placeholder="Subdivision name"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="location">
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="location"
+                                value="Metro Manila"
+                                required
+                            >
+
+                            <span>Metro Manila</span>
+
+                        </label>
+
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="location"
+                                value="Province"
+                            >
+
+                            <span>Province</span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+
+                <!-- BUTTONS -->
+
+                <div class="actions">
+
+                    <button
+                        type="submit"
+                        class="register"
+                    >
+                        ✓ Register
+                    </button>
+
+
+                    <button
+                        type="reset"
+                        class="clear"
+                    >
+                        ↻ Clear Form
+                    </button>
+
+                </div>
+
+
+                <div id="message"></div>
+
+            </form>
+
+        </div>
+
+
+        <p class="footer">
+            Online Member Registration Form
+        </p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
